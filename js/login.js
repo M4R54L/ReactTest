@@ -15,20 +15,20 @@ function test() {
     // } else {
     //     alert('Ya no hay más elementos');
     // }
-
-    var Items = document.querySelectorAll('ul li');
-    Items.forEach(item => console.log(item.textContent));
+    alert('Hola mundo');
+    // var Items = document.querySelectorAll('ul li');
+    // Items.forEach(item => console.log(item.textContent));
 }
 
-function addItem() {
-    var list = document.querySelector('ul');
-    var item = document.createElement('li');
-    item.appendChild(document.createTextNode('Otro'));
-    list.appendChild(item);
-}
+// function addItem() {
+//     var list = document.querySelector('ul');
+//     var item = document.createElement('li');
+//     item.appendChild(document.createTextNode('Otro'));
+//     list.appendChild(item);
+// }
 
-let btnTest = document.querySelector('#btnTest');
-btnTest.addEventListener('click', () => {
-    alert('h0lassss');
-    console.log('esto es una pruebas');
-});
+// let btnTest = document.querySelector('#btnTest');
+// btnTest.addEventListener('click', () => {
+//     alert('h0lassss');
+//     console.log('esto es una pruebas');
+// });
