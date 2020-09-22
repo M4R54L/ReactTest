@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Test</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>FCS</title>
 </head>
+
 <body>
-    <h1>Hola mundo</h1>
-    <h2>Prueba</h2>
+    <div class="mainGrid">
+        <div class="panelLeft">
+            <h1>Sistema de Control de Producción <br>FCS - 3000</h1>
+        </div>
+        <div class="panelRight">
+            <form class="panelRight__form" action="">
+                <label class="form-control" for="txtUser" id="lblUser">Usuario</label>
+                <input class="form-control" type="text" name="txtUser" id="txtUser" placeholder="Ingrese usuario">
+                <label class="form-control" for="txtPassword">Contraseña</label>
+                <input class="form-control" type="password" name="txtPassword" id="txtPassword" placeholder="Ingrese contraseña">
+                <button class="btn btn-submit" type="submit" class="btn btn-primary" id="btnLogin" onclick='test()'>Ingresar</button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            i4.0 - v1.0
+        </footer>
+
+        <button type="submit" id="btnTest">Botón</button>
+
+        <ul class="lista">
+            <li class="item">Item1</li>
+            <li class="item">Item2</li>
+            <li class="item">Item3</li>
+            <li class="item">Item4</li>
+            <li class="item">Item5</li>
+        </ul>
+    </div>
+
+    <script src="js/login.js"></script>
 </body>
 
-    <script src="js/project.js"></script>
 </html>

@@ -1,0 +1,70 @@
+@import './style.css';
+.mainGrid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto 20px;
+    height: 100vh;
+    grid-template-areas: "panelLeft panelRight" "footer footer";
+}
+
+.panelLeft {
+    grid-area: panelLeft;
+    background-color: var(--main-color);
+    color: var(--barkbg-font-color);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.panelRight {
+    padding-left: 1em;
+    justify-items: left;
+    align-items: center;
+    display: grid;
+    grid-area: panelRight;
+    background-color: aliceblue;
+}
+
+.test {
+    background-color: red;
+}
+
+
+/*
+////////////////////////////////////////////////////////////////////////////////////////////////
+                                        RESPONSIVE 
+////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+/* 
+////////////////////////////////////////////////
+CELULAR 
+////////////////////////////////////////////////
+*/
+
+@media only screen and (max-width: 420px) {
+    .mainGrid {
+        grid-template-areas: "panelLeft" "panelRight" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 35% auto 20px;
+    }
+    .panelRight {
+        align-items: start;
+    }
+}
+
+
+/* 
+////////////////////////////////////////////////
+TABLET 
+////////////////////////////////////////////////
+*/
+
+@media only screen and (min-width: 421px) and (max-width: 1000px) {
+    .mainGrid {
+        grid-template-areas: "panelLeft panelRight" "footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 20px;
+    }
+}
