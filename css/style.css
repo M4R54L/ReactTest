@@ -19,6 +19,7 @@ h1 {
     grid-area: footer;
     background-color: var(--main-color);
     color: var(--barkbg-font-color);
+    text-align: center;
 }
 
 .form-control {
